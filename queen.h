@@ -3,9 +3,12 @@
 
 #include "piece.h"
 
+#define QUEEN 2
+
 class Queen: public Piece
 {
     public:
+        Queen(COLOR color);
 
     protected:
     

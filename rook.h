@@ -3,11 +3,15 @@
 
 #include "piece.h"
 
+#define ROOK 3
+
 class Rook: public Piece
 {
     public:
+        Rook(COLOR color, int number);
 
     protected:
-    
+        bool alreadyMoved;
+
 };
 #endif

@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 
+#define COLOR int
 #define WHITE 0
 #define BLACK 1
 
@@ -20,6 +21,5 @@ class Piece
         int row;
         int column;
 };
-
 
 #endif

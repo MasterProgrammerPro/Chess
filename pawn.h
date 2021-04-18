@@ -3,11 +3,15 @@
 
 #include "piece.h"
 
+#define PAWN 6
+
 class Pawn: public Piece
 {
     public:
+        Pawn(COLOR color, int number);
 
     protected:
-    
+        bool alreadyMoved;
+        bool justSprinted;
 };
 #endif

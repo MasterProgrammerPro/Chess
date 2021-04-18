@@ -26,4 +26,6 @@ void Board::Initialize()
             this->board[i][j] = EMPTY;
         }
     }
+
+    // should add pieces
 }
