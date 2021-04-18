@@ -23,3 +23,16 @@ alreadyMoved(false)
         this->row = 7;
     }
 }
+
+bool Rook::canMoveTo(int r, int c)
+{
+    bool result = false;
+    int dr = abs(this->row - r), dc = abs(this->column - c);
+
+    if( (dr == 0 && dc != 0) || (dr != 0 && dc == 0) )
+    {
+        result = true;
+    }
+
+    return result;
+}

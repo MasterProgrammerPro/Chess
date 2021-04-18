@@ -23,3 +23,16 @@ Piece(KNIGHT, color)
         this->row = 7;
     }
 }
+
+bool Knight::canMoveTo(int r, int c)
+{
+    bool result = false;
+    int dr = abs(this->row - r), dc = abs(this->column - c);
+
+    if( (dr == 2 && dc == 1) || (dr == 1 && dc == 2) )
+    {
+        result = true;
+    }
+
+    return result;
+}

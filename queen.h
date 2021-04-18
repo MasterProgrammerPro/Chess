@@ -10,6 +10,8 @@ class Queen: public Piece
     public:
         Queen(COLOR color);
 
+        bool canMoveTo(int r, int c);
+
     protected:
     
 };

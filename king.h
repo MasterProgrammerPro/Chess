@@ -10,6 +10,8 @@ class King: public Piece
     public:
         King(COLOR color);
 
+        bool canMoveTo(int r, int c);
+
     protected:
         bool alreadyMoved;
         

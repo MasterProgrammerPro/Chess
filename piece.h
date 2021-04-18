@@ -11,7 +11,8 @@ class Piece
 {    
     public:
         void move(int r, int c);
-        bool canMoveTo(int r, int c);
+
+        virtual bool canMoveTo(int r, int c) = 0;
     
     protected:
         Piece(int type, int color);

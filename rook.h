@@ -10,6 +10,8 @@ class Rook: public Piece
     public:
         Rook(COLOR color, int number);
 
+        bool canMoveTo(int r, int c);
+
     protected:
         bool alreadyMoved;
 

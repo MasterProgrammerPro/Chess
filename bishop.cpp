@@ -22,3 +22,16 @@ Piece(BISHOP, color)
         this->row = 7;
     }
 }
+
+bool Bishop::canMoveTo(int r, int c)
+{
+    bool result = false;
+    int dr = abs(this->row - r), dc = abs(this->column - c);
+
+    if( (dr == dc && dr != 0) )
+    {
+        result = true;
+    }
+
+    return result;
+}

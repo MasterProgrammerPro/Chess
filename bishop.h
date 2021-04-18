@@ -10,6 +10,8 @@ class Bishop: public Piece
     public:
         Bishop(COLOR color, int number);
 
+        bool canMoveTo(int r, int c);
+
     protected:
 
 };

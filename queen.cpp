@@ -15,3 +15,16 @@ Piece(QUEEN, color)
         this->row = 7;
     }
 }
+
+bool Queen::canMoveTo(int r, int c)
+{
+    bool result = false;
+    int dr = abs(this->row - r), dc = abs(this->column - c);
+
+    if( (dr == 0 && dc != 0) || (dr != 0 && dc == 0) || (dr == dc && dr != 0) )
+    {
+        result = true;
+    }
+
+    return result;
+}

@@ -10,6 +10,8 @@ class Pawn: public Piece
     public:
         Pawn(COLOR color, int number);
 
+        bool canMoveTo(int r, int c);
+
     protected:
         bool alreadyMoved;
         bool justSprinted;

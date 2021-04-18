@@ -10,6 +10,8 @@ class Knight: public Piece
     public:
         Knight(COLOR color, int number);
 
+        bool canMoveTo(int r, int c);
+
     protected:
     
 };
